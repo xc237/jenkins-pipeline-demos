@@ -6,6 +6,7 @@ pipeline {
     stages {
         stage('Audit tools') {                        
             steps {
+                deleteDir()
                 auditTools()
             }
         }
