@@ -3,6 +3,10 @@ library identifier: 'jenkins-pipeline-demo-library@master',
 
 pipeline {
     agent any
+    environment {
+        VERSION = "0.1.0"        
+        VERSION_RC = "rc.2"
+    }
     stages {
         stage('Audit tools') {                        
             steps {
